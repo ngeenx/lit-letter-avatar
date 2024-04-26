@@ -6,11 +6,100 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Vite + Lit + TS + SASS + TW</title>
         <script type="module" src="/src/lit-letter-avatar.ts"></script>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
+            rel="stylesheet"
+        />
+
+        <style>
+            body {
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+                justify-items: center;
+                justify-content: center;
+                align-items: center;
+                height: 95vh;
+            }
+
+            section {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-items: center;
+                justify-content: center;
+                align-items: center;
+                gap: 25px;
+                padding: 30px;
+            }
+        </style>
     </head>
 
     <body>
-        <awesome-element>
-            <h1>Vite + Lit</h1>
-        </awesome-element>
+        <h1>Lit Letter Avatar Component Examples</h1>
+
+        <section>
+            <lit-letter-avatar id="1" radius="50%" size="100" fontSize="30">
+                👉⚔️
+            </lit-letter-avatar>
+
+            <lit-letter-avatar
+                id="1"
+                radius="15px"
+                size="50"
+                text="👉⚔️ Takes only first character"
+                type="single"
+                background="#00ff99"
+            ></lit-letter-avatar>
+
+            <lit-letter-avatar
+                id="1"
+                radius="50%"
+                size="100"
+                fontSize="30"
+                background="#a750d9"
+                borderColor="#ae95bd"
+                borderThickness="10"
+                text="Eyüp Erdoğan ???"
+                type="multi"
+            ></lit-letter-avatar>
+
+            <lit-letter-avatar
+                id="1"
+                radius="50%"
+                size="40"
+                background="#eb4034"
+                borderColor="#edc3c0"
+                borderThickness="5"
+                text="Eyüp 3rdoğan"
+                type="multi"
+            ></lit-letter-avatar>
+
+            <!-- with custom font -->
+            <lit-letter-avatar
+                id="1"
+                radius="100%"
+                size="200"
+                font="'Pacifico', cursive"
+                text="E Y Ü P"
+                background="#a8e356"
+                type="multi"
+            ></lit-letter-avatar>
+
+            <!-- with custom font -->
+            <lit-letter-avatar
+                id="1"
+                radius="10px"
+                size="100"
+                fontSize="30"
+                font="'Pacifico', cursive"
+                text="Pool"
+                background="#4b88f2"
+                type="multi"
+            ></lit-letter-avatar>
+        </section>
     </body>
 </html>
