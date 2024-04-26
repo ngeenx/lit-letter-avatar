@@ -1,0 +1,7 @@
+{
+  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=827846
+  "recommendations": [
+    "runem.lit-plugin",
+    "lit.lit-snippets"
+  ]
+}
