@@ -1,0 +1,27 @@
+{
+    "name": "lit-starter",
+    "private": true,
+    "version": "0.0.0",
+    "type": "module",
+    "scripts": {
+        "dev": "vite",
+        "build": "tsc && vite build",
+        "preview": "vite preview",
+        "prettier": "prettier --write src/",
+        "eslint": "eslint --ext .ts ./src"
+    },
+    "dependencies": {
+        "lit": "^3.1.2"
+    },
+    "devDependencies": {
+        "@types/node": "^20.12.7",
+        "autoprefixer": "^10.4.19",
+        "eslint": "^9.1.1",
+        "postcss": "^8.4.38",
+        "prettier": "^3.2.5",
+        "sass": "^1.75.0",
+        "tailwindcss": "^3.4.3",
+        "typescript": "^5.2.2",
+        "vite": "^5.2.0"
+    }
+}
